@@ -1,0 +1,15 @@
+<manifest>
+  <!-- Remotes -->
+  <remote name="nokidevz-kernel" fetch="https://github.com/nokidevz" revision="Sea_T_OSS" />
+  <remote name="nokidevz-tree" fetch="https://github.com/nokidevz" revision="lineage-21.0" />
+  <remote name="nokidevz-vendor" fetch="https://github.com/nokidevz" revision="hyper" />
+
+  <!-- Device -->
+  <project path="device/xiaomi/sea" name="android_device_xiaomi_sea" remote="nokidevz-tree" />
+  <project path="kernel/xiaomi/sea" name="android_kernel_xiaomi_sea" remote="nokidevz-kernel" />
+  <project path="vendor/xiaomi/sea" name="proprietary_vendor_xiaomi_sea" remote="nokidevz-vendor" />
+
+  <!-- Xiaomi Hardware and MTK Sepolicy -->
+  <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remove="github" revision="lineage-21" />
+  <project path="device/mediatek/sepolicy_vndr" name="LineageOS/android_device_mediatek_sepolicy_vndr" remote="github" revision="lineage-21" />
+</manifest>
