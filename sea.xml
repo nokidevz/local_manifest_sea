@@ -1,11 +1,15 @@
 <manifest>
   <!-- Remotes -->
+  <remote name="nokidevz-vendor" fetch="https://github.com/nokidevz" revision="lineage-21.0" />
   <remote name="nokidevz-kernel" fetch="https://github.com/nokidevz" revision="Sea_T_OSS" />
   <remote name="nokidevz-tree" fetch="https://github.com/nokidevz" revision="lineage-21.0" />
-  <remote name="nokidevz-vendor" fetch="https://github.com/nokidevz" revision="hyper" />
+  <remote name="lineage-hardware" fetch="https://github.com/LineageOS" revision="lineage-21" />
+  <remote name="blukberry-vendor" fetch="https://gitlab.com/blukberry" revision="V14.0.8.0.THZMIXM" />
 
   <!-- Device -->
   <project path="device/xiaomi/sea" name="android_device_xiaomi_sea" remote="nokidevz-tree" />
   <project path="kernel/xiaomi/sea" name="android_kernel_xiaomi_sea" remote="nokidevz-kernel" />
-  <project path="vendor/xiaomi/sea" name="proprietary_vendor_xiaomi_sea" remote="nokidevz-vendor" />
+  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="lineage-hardware" />
+  <project path="vendor/xiaomi/sea" name="android_vendor_xiaomi_sea-ims" remote="nokidevz-vendor" />
+  <project path="device/xiaomi/sea-vendor" name="android_device_xiaomi_sea-vendor" remote="blukberry-vendor" />
 </manifest>
