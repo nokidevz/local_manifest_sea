@@ -9,7 +9,7 @@
   <!-- Device -->
   <project path="device/xiaomi/sea" name="android_device_xiaomi_sea" remote="nokidevz-tree" />
   <project path="kernel/xiaomi/sea" name="android_kernel_xiaomi_sea" remote="nokidevz-kernel" />
-  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="lineage-hardware" />
+  <project path="hardware/mediatek" name="android_hardware_xiaomi" remote="lineage-hardware" />
   <project path="vendor/xiaomi/sea" name="android_vendor_xiaomi_sea-ims" remote="nokidevz-vendor" />
   <project path="device/xiaomi/sea-vendor" name="android_device_xiaomi_sea-vendor" remote="blukberry-vendor" />
 </manifest>
